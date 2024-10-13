@@ -1,0 +1,4 @@
+# used to hide from public
+
+.env
+node_modules/

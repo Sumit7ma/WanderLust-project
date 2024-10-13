@@ -1,0 +1,18 @@
+<!-- bootstrap -->
+<!-- we use boyh condition in conditiono because the success is empty array and always there avalible and the green line never go away --> 
+<!-- all the things we get is from bootstrap in alerts and dismissing section -->
+<% if(success && success.length){ %>
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3"  role="alert">
+   <%= success%>
+   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+<%}%>
+
+<% if(error && error.length){ %>
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3"  role="alert">
+       <%= error %>
+       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    
+    <%}%>
