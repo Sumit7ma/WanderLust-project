@@ -129,7 +129,7 @@ app.use("/", userRouter);
 
 app.get("/",(req,res)=>{
 
-        res.redirect("/lisitngs");
+        res.redirect("/listings");
 });
 
 app.all("*",(req, res, next)=>{
